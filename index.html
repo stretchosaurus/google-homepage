@@ -2,17 +2,31 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+		<!--Title-->
 		<title>Google</title>
+		<!-- Icon for FF, Chrome, Opera -->
+		<link rel="icon" type="image/png" href="http://d0od.wpengine.netdna-cdn.com/wp-content/uploads/2012/08/favicon.png" sizes="16x16">
+		<link rel="icon" type="image/png" href="http://d0od.wpengine.netdna-cdn.com/wp-content/uploads/2012/08/favicon.png" sizes="32x32">
+
+		<!-- Icon for IE -->
+		<link rel="icon" type="image/x-icon" href="http://d0od.wpengine.netdna-cdn.com/wp-content/uploads/2012/08/favicon.png" >
+		<link rel="shortcut icon" type="image/x-icon" href="http://d0od.wpengine.netdna-cdn.com/wp-content/uploads/2012/08/favicon.png"/>
 	</head>
 	<body>
-			<!--Google Logo-->
-		<img src="C:\the_odin_project\google-homepage\google logo.png"/>
-		<img src="C:\the_odin_project\google-homepage\mic.gif"/>
-			<!--Search box-->
-		<form>
-			<input type="text" placeholder="Type here to search"required>
-
-			<button id="gSearch" type="button">Google Search</button>
-			<button id="IFL" type="button">I'm Feeling Lucky</button>
-
+		<!--Google Logo-->
+		<img id="googleLogo" src="https://www.google.com/images/srpr/logo11w.png"/>
+		<!--Search bar container-->
+		<div id="searchContainer">
+			<!--Search Bar-->
+			<input id="searchBar" type="text" placeholder="Type here to search"/>
+			<!--Microphone-->
+			<img  id="mic" src="data:image/gif;base64,R0lGODlhHAAmAKIHAKqqqsvLy0hISObm5vf394uLiwAAAP///yH5BAEAAAcALAAAAAAcACYAAAO9eLpMIMYIQJi9DcYtKv6KtnHgB4yoAZSXKAyDy1rjoAzjzOQLrx8+4OanCAZnxiExGSEKmz3lj2lwUq3SZ3WZPbKuXGgxu9t4tLYDTkpIRQILF0x2G4lWipM7gj/oJQUkcXsCDCIFATULBCIcZ2tvB3QLDxETFnR/BgU/gRt9jX0gnpYMkJZpFzEoqQqJKAIBaQOVKHAXr3t7txgBjboSvB8EpLoFZywOAo3LFE5lYs/QW9LT1TRk1V7S2xYJADs="/>
+		</div>
+		<!--Button container-->
+		<div id="buttonContainer">
+			<!--Google Search Button-->
+			<button id="gsButton" type="button"><strong>Google Search</strong></button>
+			<!--I'm Feeling Lucky Button-->
+			<button id="ifl" type="button"><strong>I'm Feeling Lucky</strong></button>
+		</div>
 	</body>
