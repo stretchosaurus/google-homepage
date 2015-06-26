@@ -1,5 +1,5 @@
-/*Links*/
-#menu {
+	/*Top Navigation*/
+	#topNav {
 	position: relative;
 	float: right;
 	display: table-row;
@@ -8,72 +8,111 @@
     font-size: 13px;
     font-family: arial, sans-serif;
     text-align: center;
-}
+	}
 
-/*Top Navigation*/
-	#menu ul {
+		/*Top Links*/
+		#topNav ul {
 		z-index: 1;
 	    height: auto;
 	    padding: 14px 0px;
 	    margin: 0px;
+		}
+		#topNav li {
+		display: inline; 
+		padding: 8px; 
+		color: silver;
+		}
+		#topNav a {
+    	text-decoration: none;
+    	color: black;
+    	padding: 8px 0px 8px 0px;
+		}
+		#topNav a:hover {
+		text-decoration: underline;
+		}
+
+		/*Apps Grid*/
+		#grid {
+		opacity: 0.6;
+		position: absolute;
+		height: 15px;
+		width: 15px;
+		}
+		#grid:hover {
+		opacity: 0.8;
+		}
+
+		/*Notification Bell*/
+		#bell {
+		opacity: 0.6;
+		position: absolute;
+		margin: -1px 0px 0px 20px;
+		height: 18px;
+		width: 18px;
+		background-color: white;
+		-webkit-filter: invert(100%);
+		border-radius: 100%;
+		}
+		#bell:hover {
+		opacity: 0.8;
+		}
+
+		/*User Icon*/
+		#userIcon {
+		position: absolute;
+		margin: -8px 0px 0px 40px;
+		border-radius: 100%;
+		}
+
+	/*Bottom Navigation*/
+	#bottomLeftNav {
+	position: relative;
+	float: left;
+	display: table-row;
+    width: auto;
+    height: auto;
+    font-size: 13px;
+    font-family: arial, sans-serif;
+    text-align: left;
+    margin-left: 20px;
+    bottom: 0px;
 	}
-	#menu li {
+
+		#bottomLeftNav ul {
+	    padding: 0px 0px;
+	    margin: 0px;
+		}
+
+	#bottomRightNav {
+	position: relative;
+	float: right;
+	display: table-row;
+    width: auto;
+    height: auto;
+    font-size: 13px;
+    font-family: arial, sans-serif;
+    text-align: right;
+    margin-right: 20px;
+    bottom: 0px;
+	}
+		#bottomRightNav ul {
+	    padding: 0px 0px;
+	    margin: 0px;
+		}
+
+	#bottomNav li {
 	display: inline; 
-	padding: 8px; 
-	color: silver;
+	padding: 13px; 
+	color: #666;
 	}
-	#menu a {
+	#bottomNav a {
     text-decoration: none;
-    color: black;
+    color: #666;
     padding: 8px 0px 8px 0px;
 	}
-	#menu a:hover {
+	#bottomNav a:hover {
 	text-decoration: underline;
 	}
-
-	/*Apps Grid*/
-	#grid {
-	opacity: 0.6;
-	position: absolute;
-	height: 15px;
-	width: 15px;
-	}
-	#grid:hover {
-	opacity: 0.8;
-	}
-
-	/*Notification Bell*/
-	#bell {
-	opacity: 0.6;
-	position: absolute;
-	margin: -1px 0px 0px 20px;
-	height: 18px;
-	width: 18px;
-	background-color: white;
-	-webkit-filter: invert(100%);
-	border-radius: 100%;
-	}
-	#bell:hover {
-	opacity: 0.8;
-	}
-
-	/*User Icon*/
-	#userIcon {
-	position: absolute;
-	margin: -8px 0px 0px 40px;
-	border-radius: 100%;
-	}
-
-/*Google Logo*/
-#googleLogo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    clear: both;
-    padding-top: 115px;
-    height: 95px;
-    width: 269px;
-}
 
 /*Search Bar*/
 #searchBar {
@@ -144,14 +183,14 @@
 	margin-top: 16px;
 }
 
-/*#bottomBar {
+#footerBox {
 	position: absolute;
 	display: block;
 	background-color: #F2F2F2;
 	border-top: 1px solid #E4E4E4;
 	line-height: 40px;
-	height: 35px;
+	height: 40px;
 	bottom: 0;
 	width: 100%;
 	margin-left: -8px;
-}*/
+}
