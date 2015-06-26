@@ -1,25 +1,96 @@
+/*Links*/
+#menu {
+	position: relative;
+	float: right;
+	display: table-row;
+    width: 400px;
+    height: 70px;
+    font-size: 13px;
+    font-family: arial, sans-serif;
+    text-align: center;
+}
+
+/*Top Navigation*/
+	#menu ul {
+		z-index: 1;
+	    height: auto;
+	    padding: 14px 0px;
+	    margin: 0px;
+	}
+	#menu li {
+	display: inline; 
+	padding: 8px; 
+	color: silver;
+	}
+	#menu a {
+    text-decoration: none;
+    color: black;
+    padding: 8px 0px 8px 0px;
+	}
+	#menu a:hover {
+	text-decoration: underline;
+	}
+
+	/*Apps Grid*/
+	#grid {
+	opacity: 0.6;
+	position: absolute;
+	height: 15px;
+	width: 15px;
+	}
+	#grid:hover {
+	opacity: 0.8;
+	}
+
+	/*Notification Bell*/
+	#bell {
+	opacity: 0.6;
+	position: absolute;
+	margin: -1px 0px 0px 20px;
+	height: 18px;
+	width: 18px;
+	background-color: white;
+	-webkit-filter: invert(100%);
+	border-radius: 100%;
+	}
+	#bell:hover {
+	opacity: 0.8;
+	}
+
+	/*User Icon*/
+	#userIcon {
+	position: absolute;
+	margin: -8px 0px 0px 40px;
+	border-radius: 100%;
+	}
+
 /*Google Logo*/
 #googleLogo {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    clear: both;
     padding-top: 115px;
     height: 95px;
     width: 269px;
 }
+
 /*Search Bar*/
 #searchBar {
 	opacity: 0.6;
 	position: relative;
 	display: block;
 	height: 24px;
-	font-size: 18px;
+	font-size: 16px;
 	font-family: Arial, sans-serif;
-	width: 550px;
+	width: 520px;
+	padding-right: 25px;
+	padding-left: 5px;
 }
 #searchBar:hover {
 	opacity: 0.8;
 }
+
 /*Google Search button*/
 #gsButton {
 	opacity: 0.8;
@@ -34,6 +105,7 @@
 #gsButton:hover {
 	border-color: #A8A8A8;
 }
+
 /*I'm Feeling Lucky button*/ 
 #ifl {
 	opacity: 0.8;
@@ -47,6 +119,7 @@
 #ifl:hover {
 	border-color: #A8A8A8;
 }
+
 /*Mic*/
 #mic {
 	position: absolute;
@@ -58,6 +131,7 @@
 #mic:hover {
 	opacity: 0.8;
 }
+
 /*Search bar container*/
 #searchContainer {
 	margin: 20px auto 0px auto;
@@ -69,3 +143,15 @@
 	text-align: center;
 	margin-top: 16px;
 }
+
+/*#bottomBar {
+	position: absolute;
+	display: block;
+	background-color: #F2F2F2;
+	border-top: 1px solid #E4E4E4;
+	line-height: 40px;
+	height: 35px;
+	bottom: 0;
+	width: 100%;
+	margin-left: -8px;
+}*/
